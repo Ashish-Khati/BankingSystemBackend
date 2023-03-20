@@ -4,6 +4,9 @@ require('../DB/conn')
 const User=require('../models/userSchema')
 // const Passbook=require('../models/passbookSchema')
 
+router.get("/ashish",async(req,res)=>{
+  res.send("Hello Ashish")
+})
 router.get("/user",async(req,res)=>{
   try{
     const allData=await User.find({});
